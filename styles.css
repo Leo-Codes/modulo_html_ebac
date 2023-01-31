@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;500&family=Poppins&family=Roboto&display=swap');
+
+body{
+    height: 90vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+
+.cadastro{
+    display:flex;
+    flex-direction:column;
+    padding: 1.5rem;
+    background:rgb(243, 243, 243);
+    border-radius:15px;
+
+    -webkit-box-shadow: 4px 9px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 9px 21px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 9px 21px 0px rgba(0,0,0,0.75);
+}
+
+.cadastro h1{
+    margin:0;
+    margin-bottom: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cadastro label,input{
+    font-family: 'Poppins';
+}
+
+.cadastro input{
+    width:18rem;
+    height: 1.3rem;
+    margin-bottom: 0.9rem;
+    outline:none;
+    border:rgba(0, 0, 0, 0.247) solid 1px;
+    border-radius: 15px;
+    padding:0.4rem;
+    background:none;   
+
+}
+
+.cadastro input[type="submit"]{
+    background:rgb(20, 103, 228);
+    color:white;
+    width:100%;
+    height: 2rem;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
