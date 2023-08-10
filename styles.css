@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg,rgb(62, 146, 255) 20%,rgba(0, 89, 255, 0.945)50%,rgb(44, 100, 185) 100%) no-repeat;
+    overflow: hidden;
+
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.input-panel{
+    background:white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.473);
+    max-width: 19rem;
+    min-height: 20rem;
+
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field input{
+    font-family: 'Poppins';
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 1rem;
+    min-width: 10rem;
+    max-width: 100%;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.input-panel button{
+    background: rgb(27, 27, 27);
+    color:white;
+    border:none;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    min-width: 10rem;
+    max-width: 100%;
+}
+
+.input-panel h1{
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+    color:rgb(27, 27, 27);
+}
+.input-panel h1::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 5rem;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+    margin-left: 0.3rem;
+    background:rgb(0, 0, 0);
+}
+
+.input-panel p{
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+    color:rgb(168, 168, 168);
+}
