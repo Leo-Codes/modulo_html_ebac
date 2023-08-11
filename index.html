@@ -11,15 +11,22 @@
     <div class="container">
         <div class="input-panel">
             <h1>VALIDAR</h1>
-            <p>Combine dois Valores de acordo com a seguinte regra: A > B</p>
+            <p>Combine dois Valores de acordo com a seguinte regra: <strong>B > A</strong></p>
             <div class="input-field">
-                <input type="number" name="" id="campo-a" placeholder="Digite o Valor A">
-                <input type="number" name="" id="campo-b" placeholder="Digite o Valor B">
-                <button onclick="validar()">Validar</button>
+                <div class="input">
+                    <span class="orange-bg">A</span>                    
+                    <input type="number" value="0" id="campo-a" placeholder="Digite o Valor A">
+                </div>
+                <div class="input">
+                    <span class="blue-bg">B</span>                    
+                    <input type="number" value="0" id="campo-b" placeholder="Digite o Valor B">
+                </div>
+                <h3 id="resultado">INVALIDO!</h3>
+                <button onclick="validar('campo-a', 'campo-b')">Validar</button>
             </div>
         </div>
     </div>
     
 </body>
-<script src="./index.js" onload="setup('campo-a', 'campo-b')"></script>
+<script src="./index.js"></script>
 </html>
