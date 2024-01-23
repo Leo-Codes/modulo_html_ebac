@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Poppins:wght@300;400;500;700&family=Roboto+Mono:wght@100;200;400&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-list">
+            <div class="list-header">
+                <h1 class="header-title">To-Do List</h1>
+                <img class='header-icon' src="./images/checklist.png" alt="" srcset="">
+            </div>
+            <div class="list-input">
+                <form action="">
+                    <input id="task-input" class="add-input" type="text" placeholder="Insira sua tarefa">
+                    <button id="add-btn" class="add-btn" type="reset">ADICIONAR</button>
+                </form>
+            </div>
+            <div id="list-body" class="list-body">
+                <!-- <div class="task">
+                    modelo de elemento
+                    <input type="checkbox" name="" id="">
+                    <a  class="task-description">Assistir filme</a>
+                    <i class="fi fi-rr-trash delete-icon"></i>
+                </div> -->
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="./js/task.js"></script>
+
+</html>
