@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Plugin</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.inputmask.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="checkout-panel">
+            <div class="delivery-form">
+                <div class="header">
+                    <h2 class="title">Envio</h2>
+                </div>
+                <form action="">
+                    <span>Dados pessoais</span>
+                    <div class="input-field default-input">
+                        <input type="text" placeholder="Nome" id="">
+                        <input type="text" placeholder="Sobrenome" id="">
+                    </div>
+                    <div class="input-field fit-input">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-field default-input">
+                        <input id="telefone" type="tel" placeholder="Telefone">
+                        <input id="cpf" type="tel" placeholder="CPF">
+                    </div>
+                    <div class="input-field fit-input">
+                    </div>
+                    <span>Endereço</span>
+                    <div class="input-field">
+                        <input class="cep" type="text" placeholder="CEP" id="cep">
+                        <input class="street" type="text" placeholder="Rua" id="">
+                    </div>
+                    <div class="input-field default-input">
+                        <input type="number" placeholder="Numero" id="">
+                        <input type="text" placeholder="Complemento" id="">
+                    </div>
+
+                    <button class="submit-button" type="button">Continuar</button>
+
+                </form>
+            </div>
+            <div class="cart-items">
+                <div class="header">
+                    <h2 class="title">Carrinho</h2>
+                </div>
+                <div class="item">
+                    <img src="./images/cadeira_gaming_preta_vermelha_oh_gb001_nr_dxracer_33086_1_c62ea16e0ce8d7b77c6246f174d0a8b7.webp" alt="">
+                    <a class="item-description">CADEIRA GAMING DXRACER</a>
+                    <a class="item-price"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
