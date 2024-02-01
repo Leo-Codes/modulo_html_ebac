@@ -62,7 +62,7 @@ body{
 .item{
     display:flex;
     align-items: center;
-    padding-bottom: 1rem;
+    padding:1rem 0;
     border-bottom: 1px solid rgba(141, 141, 141, 0.425);
 }
 .item img{
