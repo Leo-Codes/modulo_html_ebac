@@ -1,34 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Exercício Bootstrap</title>
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <title>Cardapio</title>
 </head>
+
 <body>
-    <div class="container vh-100 ">
-        <div class="row h-100 align-items-center justify-content-center">
-            <div class="col-8  d-flex justify-content-center">
-                <form action="" class="w-50 border border-light-subtle rounded p-5">
-                    <h4 class="h3">Exercício Bootstrap</h4>
-                    <div class="mb-3">
-                        <label for="name_input">Nome</label>
-                        <input type="text" name="" id="name_input" placeholder="Leonardo Marinho" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label for="mail_input">E-mail</label>
-                        <input type="text" name="" id="mail_input" placeholder="your@email.com" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label for="phone_input">Telefone</label>
-                        <input type="text" name="" id="phone_input" placeholder="(12)9999-99999" class="form-control">
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                </form>
+    <header class="py-1 vw-100">
+        <div class="navbar navbar-expand-lg">
+            <!-- <div class="logo d-flex align-items-center">
+                <img class="logo-img mx-1" src="./src/images/xlogo.png" alt="">
+                <h1 class="m-0">Motors</h1>
+            </div> -->
+            <div class="container-fluid px-3">
+                <a href="" class="text-white navbar-brand d-flex align-items-center brand-title">
+                    E-burguer
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="text-white navbar-toggler-icon"></span>
+                </button>
+
+                <nav id="menu" class="collapse navbar-collapse justify-content-end pe-5">
+                    <ul class="nav">
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link active rounded">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link ">Delivery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link ">Sobre</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
+    </header>
+    <div class="container-fluid vw-100 vh-100 g-0 p-0  overflow-x-hidden">
+        <div class="row bg-black bg-black">
+            <div id="burguer_carousel" class="carousel carousel-light slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#burguer_carousel" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#burguer_carousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#burguer_carousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner position-relative">
+                    <div class="carousel-item w-100 active">
+                        <h1 class="h1 text-white carousel-text position-absolute">Experimente os <br><span
+                                class="yellow-text">melhores</span> combos
+                        </h1>
+                        <img class="carousel-bg w-100"
+                            src="./src/images/vecteezy_a-delicioso-hamburguer-dentro-a-preto-fundo-com-ai-gerado_23010420.jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="h1 text-white carousel-text position-absolute">Delivery mais <br> <span
+                                class="yellow-text">rapido</span> da cidade!
+                        </h1>
+                        <img class="carousel-bg w-100"
+                            src="./src/images/vecteezy_the-fast-food-meal-in-the-black-background-with_23010452.jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="h1 text-white carousel-text position-absolute">No conforto da <br> <span
+                                class="yellow-text">sua</span> casa
+                        </h1>
+                        <img class="carousel-bg w-100"
+                            src="./src/images/vecteezy_le-delicieux-burger-dans-le-noir-contexte-avec-ai-genere_23010419.jpg"
+                            alt="">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row d-flex bg-dark flex-wrap pt-3 px-3 g-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                <div class="card">
+                    <img src="./src/images/sq1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Clássico Americano</h5>
+                        <p class="card-text"> Um hambúrguer tradicional que nunca sai de moda, com um suculento hambúrguer de carne bovina, alface crocante, tomate fresco, cebola, picles e um toque de molho especial em um pão de gergelim.</p>
+                        <a href="#" class="btn btn-warning">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                <div class="card ">
+                    <img src="./src/images/sq2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheddar Melt</h5>
+                        <p class="card-text">Delicie-se com o sabor intenso do queijo cheddar derretido sobre um hambúrguer de carne bovina premium, complementado por cebolas caramelizadas e molho barbecue, tudo em um pão macio.</p>
+                            <a href="#" class="btn btn-warning">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                <div class="card">
+                    <img src="./src/images/sq3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bacon Bliss</h5>
+                        <p class="card-text">Para os amantes de bacon, este hambúrguer é coberto com fatias generosas de bacon crocante, queijo americano, alface, tomate e nossa maionese caseira, servido em um pão artesanal.</p>
+                            <a href="#" class="btn btn-warning">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                <div class="card">
+                    <img src="./src/images/sq4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Veggie Vibrante</h5>
+                        <p class="card-text"> Uma opção deliciosa e saudável, com um hambúrguer de legumes grelhados, abacate amassado, brotos, tomate, cebola roxa e um molho leve de ervas, servido em um pão integral.</p>
+                            <a href="#" class="btn btn-warning">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                <div class="card">
+                    <img src="./src/images/sq5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Spicy Cowboy</h5>
+                        <p class="card-text">Aventure-se com este hambúrguer picante que inclui um hambúrguer de carne bovina, queijo pepper jack, jalapeños, anéis de cebola empanados e molho chipotle, tudo em um pão de chili.</p>
+                            <a href="#" class="btn btn-warning">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                <div class="card">
+                    <img src="./src/images/sq6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mushroom Swiss</h5>
+                        <p class="card-text">Um hambúrguer gourmet com um hambúrguer de carne bovina suculento, cogumelos salteados, queijo suíço derretido e molho de alho e ervas, servido em um pão rústico.</p>
+                            <a href="#" class="btn btn-warning">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </div>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
 </html>
