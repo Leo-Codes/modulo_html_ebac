@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.scss","colors.scss"],"names":[],"mappings":"AAEA;EACI,kBCHO","file":"../styles.css","sourcesContent":["@use 'colors';\r\n\r\nbody{\r\n    background-color: colors.$bg-color;\r\n}","$bg-color: #fff;\r\n$title-color:black;"]}
