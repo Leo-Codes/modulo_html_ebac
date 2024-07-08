@@ -1,0 +1,111 @@
+@import "maps.less";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+body{
+    background-color: #colors[bg-color];
+
+    .container{
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+
+        @media #breakpoint[@tablet]{
+            max-width: 80%;
+        }
+    }
+    section{
+        padding: 56px 0;
+        
+    }
+    li{
+        list-style: none;
+    }
+}
+
+header{
+    background: #colors[primary-color];
+    position:sticky;
+    top:0;
+    left: 0;
+
+    .container{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+    .menu{
+        display:flex;
+        li{
+            font-weight: bold;
+            margin-left: 24px;
+            a{
+                color:#fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.products{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+
+    @media #breakpoint[@tablet]{
+        grid-template-columns:repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+    @media #breakpoint[@mobile]{
+        display:block;
+    }
+
+    .product-item{
+        @media #breakpoint[@mobile]{
+            margin-bottom: 32px;
+        }
+        
+        img{
+            width: 100%;
+            border-radius: 16px;
+        }
+        .product-button{
+            display: block;
+            background-color: #colors[secondary-color];
+            color:#fff;
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 8px;
+            margin-top: 8px;
+            text-decoration:none;
+
+            &:hover{
+                background-color:darken(#colors[secondary-color],5%);
+            }
+        }
+        h3{
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 16px;
+        }
+        p{
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        a{
+            text-decoration: none;
+            color: #colors[primary-color];
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 16px;
+        }
+    }
+}
