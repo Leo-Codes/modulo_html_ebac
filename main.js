@@ -22,7 +22,9 @@ $(document).ready(function(){
         display_elements.following.html(response.following);
         display_elements.avatar.attr("src", response.avatar_url);
         display_elements.page_btn.attr("href", response.html_url);
-    })
+    }).fail(function(textStatus, errorThrown) {
+        console.error("Erro:", textStatus, errorThrown);
+      });
 
 
 })
